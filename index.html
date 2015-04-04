@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/light/light.css" media="all" />
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+	        $('#slider').nivoSlider();
+	    });
+	    $(document).ready(function () {
+	    	$('#slt_sort select').customSelect();
+	    });
+	</script>
+	<!--[if IE]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<section id="wrapper">
+		<header id="header" class="box-center">
+			<a href="#" class="logo"><img src="images/logo.jpg" alt=""></a>
+			<nav id="menu">
+				<ul>
+					<li class="active"><a href="index.html">shop</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="blog.html">blog</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
+			<div id="header-right">
+				<ul class="social">
+					<li><a href="#"><img src="images/social_fb.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_cnt.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_tw.png" alt=""></a></li>
+				</ul>
+				<form action="POST" id="search">
+					<input type="text" name="s" id="txt_seach" placeholder="Search">
+					<input type="submit" value="">
+				</form>
+				<div id="checkout">
+					<a href="#">Checkout <span>0$</span></a>
+				</div>
+			</div>
+		</header>
+		<section class=" slider-container box-center " style="min-height: 500px">			
+			<div id="slider" class="nivoSlider">
+	            <img src="images/slider01.jpg" data-thumb="images/slider01.jpg" alt="" title="#text-img01" />
+	            <img src="images/slider02.jpg" data-thumb="images/slider02.jpg" alt="" title="#text-img02" />
+	            <img src="images/slider01.jpg" data-thumb="images/slider01.jpg" alt="" title="#text-img03" />
+	            <img src="images/slider02.jpg" data-thumb="images/slider02.jpg" alt="" title="#text-img04" />
+            </div>
+			
+            <div id="text-img01" class="nivo-html-caption">
+                <p class="text">NEW ARRIVALS</p>
+                <a href="#">SHOP NOW</a>
+            </div>
+            <div id="text-img02" class="nivo-html-caption">
+                <p class="text">NEW ARRIVALS</p>
+                <a href="#">SHOP NOW</a>
+            </div>
+            <div id="text-img03" class="nivo-html-caption">
+                <p class="text">NEW ARRIVALS</p>
+                <a href="#">SHOP NOW</a>
+            </div>
+            <div id="text-img04" class="nivo-html-caption">
+                <p class="text">NEW ARRIVALS</p>
+                <a href="#">SHOP NOW</a>
+            </div>
+		</section>
+		<section id="content" class="box-center">
+			<aside class="sidebar">
+				<ul class="menu-content">
+					<li>
+						<span>footwear brands</span>
+						<ul>
+							<li class="active"><a href="#">Adidas</a></li>
+							<li><a href="#">Puma</a></li>
+							<li><a href="#">NewBalance</a></li>
+							<li><a href="#">Reebok, Clark's</a></li>
+							<li><a href="#">Huf</a></li>
+							<li><a href="#">PFFlyers</a></li>
+							<li><a href="#">Seabago</a></li>
+							<li><a href="#">Sole Technology</a></li>
+							<li><a href="#">DCFootwear</a></li>
+						</ul>
+					</li>
+					<li>
+						<span>Clothing Brands</span>
+						<ul>
+							<li><a href="#">Acapulco Gold</a></li>
+							<li><a href="#">ADHD</a></li>
+							<li><a href="#">Amongst Friends</a></li>
+							<li><a href="#">Diamond Supply</a></li>
+							<li><a href="#">Dirks</a></li>
+							<li><a href="#">Flying Coffin</a></li>
+							<li><a href="#">Guns Germs and Steel</a></li>
+							<li><a href="#">Private Label</a></li>
+							<li><a href="#">Huf</a></li>
+							<li><a href="#">In4mation</a></li>
+							<li><a href="#">King Stampede</a></li>
+							<li><a href="#">Last Place</a></li>
+							<li><a href="#">Only NY</a></li>
+							<li><a href="#">Publish Brand</a></li>
+							<li><a href="#">Quiet Life</a></li>
+							<li><a href="#">Rebel 8</a></li>
+							<li><a href="#">Terminally Ill</a></li>
+							<li><a href="#">Vintage</a></li>
+							<li><a href="#">Heart &amp;Sole Private</a></li>
+						</ul>
+					</li>
+				</ul>
+			</aside>
+			<div class="content-right">
+				<div id="slt_sort">
+					<span>SORT BY </span>
+					<select name="" id="slt">
+						<option value="newest">newest</option>
+						<option value="newest">newest1</option>
+						<option value="newest">newest2</option>
+						<option value="newest">newest3</option>
+						<option value="newest">newest4</option>
+					</select>
+				</div>
+				<ul class="product">
+					<li>
+						<img src="images/product_img01.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">Acapulco gold fall top 
+covers</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img02.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">Bodega Styles limited 
+longsleeve</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img03.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">Only ny fall 2013</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img04.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">Vintage collection</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img05.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">Classic snapbacks</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img06.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">MAde in USA 576 camo 
+olive</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img07.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">new balance 580 &amp; made 
+in usa 576</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img08.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">quiet life top covers</a></h6>
+						<p class="price">20 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+					<li>
+						<img src="images/product_img09.jpg" alt="">
+						<h6 class="title"><a href="#" class="tit">Quiet life socks</a></h6>
+						<p class="price">10 $</p>
+						<a href="#" class="add">Add to Cart</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer id="footer">
+			<div class="box-center">
+				<p class="copy">All content is © 2013 by Heart &amp; Sole . All rights reserved. </p>
+				<nav class="menu-footer">
+					<ul>
+						<li><a href="#">shop</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+				</nav>
+				<ul class="social-footer">
+					<li><a href="#"><img src="images/social_fb_w.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_cnt_w.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_tw_w.png" alt=""></a></li>
+				</ul>
+			</div>
+		</footer>
+	</section>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'PTSans';
+	src: url('PTSansBold.eot');
+	src: url('PTSansBold.eot?#iefix') format('embedded-opentype'),
+		 url('PTSansBold.woff') format('woff'),
+		 url('PTSansBold.ttf') format('truetype'),
+		 url('PTSansBold.svg#PTSansBold') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'PTSans';
+	src: url('PTSans.eot');
+	src: url('PTSans.eot?#iefix') format('embedded-opentype'),
+		 url('PTSans.woff') format('woff'),
+		 url('PTSans.ttf') format('truetype'),
+		 url('PTSans.svg#PTSans') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Regular.eot');
+	src: url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-Regular.woff') format('woff'),
+		 url('OpenSans-Regular.ttf') format('truetype'),
+		 url('OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Bold.eot');
+	src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-Bold.woff') format('woff'),
+		 url('OpenSans-Bold.ttf') format('truetype'),
+		 url('OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Light.eot');
+	src: url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-Light.woff') format('woff'),
+		 url('OpenSans-Light.ttf') format('truetype'),
+		 url('OpenSans-Light.svg#OpenSans-Light') format('svg');
+	font-style: normal;
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-Italic.eot');
+	src: url('OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-Italic.woff') format('woff'),
+		 url('OpenSans-Italic.ttf') format('truetype'),
+		 url('OpenSans-Italic.svg#OpenSans') format('svg');
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-BoldItalic.eot');
+	src: url('OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-BoldItalic.woff') format('woff'),
+		 url('OpenSans-BoldItalic.ttf') format('truetype'),
+		 url('FileName.svg#OpenSans') format('svg');
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-ExtraBold.eot');
+	src: url('OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-ExtraBold.woff') format('woff'),
+		 url('OpenSans-ExtraBold.ttf') format('truetype'),
+		 url('OpenSans-ExtraBold.svg#OpenSans') format('svg');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('OpenSans-LightItalic.eot');
+	src: url('OpenSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('OpenSans-LightItalic.woff') format('woff'),
+		 url('OpenSans-LightItalic.ttf') format('truetype'),
+		 url('OpenSans-LightItalic.svg#OpenSans-LightItalic') format('svg');
+	font-style: italic;
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: 'roboto-medium';
+	src: url('roboto-medium.eot');
+	src: url('roboto-medium.eot?#iefix') format('embedded-opentype'),
+		 url('roboto-medium.woff') format('woff'),
+		 url('roboto-medium.ttf') format('truetype'),
+		 url('roboto-medium.svg#roboto-medium') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src: url('roboto-black.eot');
+	src: url('roboto-black.eot?#iefix') format('embedded-opentype'),
+		 url('roboto-black.woff') format('woff'),
+		 url('roboto-black.ttf') format('truetype'),
+		 url('roboto-black.svg#roboto-black') format('svg');
+	font-style: normal;
+	font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('roboto-light.eot');
+    src: url('roboto-light.eot?#iefix') format('embedded-opentype'),
+         url('roboto-light.woff') format('woff'),
+         url('roboto-light.ttf') format('truetype'),
+         url('roboto-light.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

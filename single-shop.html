@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+		  $('#carousel').flexslider({
+		    animation: "slide",
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    itemWidth: 165,
+		    itemMargin: 0,
+		    asNavFor: '#slider'
+		  });
+		   
+		  $('#slider').flexslider({
+		    animation: "slide",
+		    controlNav: false,
+		    animationLoop: false,
+		    slideshow: false,
+		    sync: "#carousel",
+		    after: function(){
+		    	$('#slider .flex-active-slide img').click(function(){
+		    		var link = $(this).attr('src');
+		    		$.fancybox({
+						//'orig' : $(this),
+						'padding' : 0,
+						'href' : link,
+						'title' : '',
+						'transitionIn' : 'elastic',
+						'transitionOut' : 'elastic'
+					}); 
+		    	});
+		    }
+		  });
+		  $('#slider .flex-active-slide img').click(function(){
+	    		var link = $(this).attr('src');
+	    		$.fancybox({
+					//'orig' : $(this),
+					'padding' : 0,
+					'href' : link,
+					'title' : '',
+					'transitionIn' : 'elastic',
+					'transitionOut' : 'elastic'
+				}); 
+	    	});
+		});
+		$(document).ready(function () {
+	    	$('#prd-size').customSelect();
+	    });
+	</script>
+	<!--[if IE]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<section id="wrapper" class="">
+		<header id="header" class="box-center">
+			<a href="#" class="logo"><img src="images/logo.jpg" alt=""></a>
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">shop</a></li>
+					<li><a href="about.html">about</a></li>
+					<li class="active"><a href="blog.html">blog</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
+			<div id="header-right">
+				<ul class="social">
+					<li><a href="#"><img src="images/social_fb.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_cnt.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_tw.png" alt=""></a></li>
+				</ul>
+				<form action="POST" id="search">
+					<input type="text" name="s" id="txt_seach" placeholder="Search">
+					<input type="submit" value="">
+				</form>
+				<div id="checkout">
+					<a href="#">Checkout <span>0$</span></a>
+				</div>
+			</div>
+		</header>
+		<section id="content" class="box-center single-blog">
+			<p class="bre"><a href="#">home</a> >> <a href="#">Acapulco gold fall top covers </a></p>
+			<div class="details">
+				<div class="slr">
+					<div id="slider" class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/slr_prd01.jpg" alt="" />
+							</li>
+							<li>
+								<img src="images/slr_prd02.jpg" alt=""/>
+							</li>
+							<li>
+								<img src="images/slr_prd01.jpg" alt=""/>
+							</li>
+							<li>
+								<img src="images/slr_prd02.jpg" alt=""/>
+							</li>
+						</ul>
+					</div>
+					<div id="carousel" class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/slr_prd01.jpg" alt=""/>
+							</li>
+							<li>
+								<img src="images/slr_prd02.jpg" alt=""/>
+							</li>
+							<li>
+								<img src="images/slr_prd01.jpg" alt=""/>
+							</li>
+							<li>
+								<img src="images/slr_prd02.jpg" alt=""/>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="txt-details">
+					<h4 class="name-product">Acapulco gold fall top covers</h4>
+					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis varius dolor, ut hendrerit urna hendrerit a. Aenean iaculis sapien urna, vitae suscipit est interdum imperdiet. Fusce luctus congue magna, et rutrum sapien ultrices eu. Pellentesque lacinia fringilla eros.</p>
+					<span class="price">20 $</span>
+					<div class="size">
+						<span>Size</span>
+						<select name="" id="prd-size">
+							<option value="">X</option>
+							<option value="">XL</option>
+							<option value="">XXL</option>
+							<option value="">XXXL</option>
+							<option value="">XXXXL</option>
+						</select>
+					</div>
+					<span class="qt">QT.<input type="text" name="" id="qt"></span>
+					<a href="#" class="addtocart">Add to Cart</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+		<footer id="footer">
+			<div class="box-center">
+				<p class="copy">All content is © 2013 by Heart &amp; Sole . All rights reserved. </p>
+				<nav class="menu-footer">
+					<ul>
+						<li><a href="#">shop</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+				</nav>
+				<ul class="social-footer">
+					<li><a href="#"><img src="images/social_fb_w.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_cnt_w.png" alt=""></a></li>
+					<li><a href="#"><img src="images/social_tw_w.png" alt=""></a></li>
+				</ul>
+			</div>
+		</footer>
+	</section>
+</body>
+</html>
